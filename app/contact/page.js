@@ -1,4 +1,5 @@
 import { Hero } from '@/components';
+import ContactUs from '@/components/ContactUs';
 
 export const metadata = {
   title: "Contact | Big Bin",
@@ -8,7 +9,7 @@ export const metadata = {
 export default function Contact() {
   return (
     <>
-      <Hero />
+      <ContactUs />
     </>
   );
 }

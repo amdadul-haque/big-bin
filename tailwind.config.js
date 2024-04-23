@@ -11,16 +11,19 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "home": "url('../public/images/home.png')",
+        "contact": "url('../public/images/contact.jpg')",
+
       },
       colors: {
         brand: {
           1: "#52C53B",
           2: "#4CA665",
-
         },
         black: {
           0: "#000000",
           1: "#212121",
+          2: "#4F474E",
         },
         offWhite: {
           1: "#E9EEE8",
