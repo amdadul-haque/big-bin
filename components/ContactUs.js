@@ -47,9 +47,27 @@ const ContactUs = () => {
   return (
     <div
       id="kontakt"
-      className="bg-[#E9EEE8] w-full mx-auto flex justify-between items-center flex-col gap-16 py-12 lg:px-0 sm:px-12 px-6"
+      className="bg-[#E9EEE8] w-full mx-auto flex justify-between items-center flex-col gap-12 py-12 lg:px-0 sm:px-12 px-6"
     >
-      <div className="w-full max-w-[600px] px-5 sm:px-10 py-10 bg-white shadow-md">
+      <div className="w-full max-w-[600px] px-5 py-6 sm:px-10 sm:py-10 bg-white shadow-md gap-y-5 grid sm:grid-cols-2">
+        <div>
+          <p className="text-lg">Owner: Pedja Petkovic</p>
+          <p className="text-base my-1">bigbins</p>
+          <a href="tel:4164584324" className="text-base hover:underline underline-offset-4 transition-all duration-300 ">Call: <span className="font-bold">
+            416-458-4324
+          </span> </a>
+        </div>
+        <div>
+          <p className="text-lg">Sales: Domenic Augurusa</p>
+          <a href="mailto:augurusadomenic@gmail.com" className="text-base hover:underline underline-offset-4 transition-all duration-300 block my-1">Mail: <span className="font-bold">
+            augurusadomenic@gmail.com
+          </span> </a>
+          <a href="tel:4168818399" className="text-base hover:underline underline-offset-4 hover:transition-all hover:duration-1000">Call: <span className="font-bold">
+            416-881-8399
+          </span> </a>
+        </div>
+      </div>
+      <div className="w-full max-w-[600px] px-5 py-6 sm:px-10 sm:py-10 bg-white shadow-md">
         <form onSubmit={handleButtonClick} className="flex flex-col gap-4 sm:gap-8">
           <div>
             <h3 className="mb-2 text-base">Email *</h3>
@@ -92,9 +110,9 @@ const ContactUs = () => {
           </div>
 
           {/* <div className="mt-4"> */}
-            <button type='submit' disabled={isLoading} className="py-[10px] px-6 bg-brand-1 hover:bg-brand-1/90 text-white rounded transition-colors duration-200 disabled:bg-gray-400 font-bold sm:text-xl">
-              Submit
-            </button>
+          <button type='submit' disabled={isLoading} className="py-[10px] px-6 bg-brand-1 hover:bg-brand-1/90 text-white rounded transition-colors duration-200 disabled:bg-gray-400 font-bold sm:text-xl">
+            Submit
+          </button>
           {/* </div> */}
         </form>
       </div>
