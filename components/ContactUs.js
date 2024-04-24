@@ -52,7 +52,9 @@ const ContactUs = () => {
       <div className="w-full max-w-[600px] px-5 py-6 sm:px-10 sm:py-10 bg-white shadow-md gap-y-5 grid sm:grid-cols-2">
         <div>
           <p className="text-lg">Owner: Pedja Petkovic</p>
-          <p className="text-base my-1">bigbins</p>
+          <a href="mailto:bigbinservices@gmail.com" className="text-base hover:underline underline-offset-4 transition-all duration-300 block my-1">Mail: <span className="font-bold">
+            bigbinservices@gmail.com
+          </span> </a>
           <a href="tel:4164584324" className="text-base hover:underline underline-offset-4 transition-all duration-300 ">Call: <span className="font-bold">
             416-458-4324
           </span> </a>

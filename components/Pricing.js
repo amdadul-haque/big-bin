@@ -27,7 +27,7 @@ const Pricing = () => {
       img: './images/40.png',
       title: '40 Yard Bin',
       details: [
-        { key: 'Drop off:', value: '$250' },
+        { key: 'Drop off:', value: '$275' },
         { key: 'Pick up:', value: '$100' },
         { key: 'Waste:', value: '$110/ metric ton' }
       ],
@@ -47,7 +47,7 @@ const Pricing = () => {
               <h3 className='text-[40px]'>{item.title}</h3>
               <div className='text-[18px]'>
                 {item.details.map((detail, index) => (
-                  <p key={index} className='flex justify-center gap-4 my-2'>{detail.key} <span>{detail.value}</span></p>
+                  <p key={index} className='flex justify-center gap-4 my-2'>{detail.key} <span className={`${index === 0 && 'font-semibold'}`}>{detail.value}</span></p>
                 ))}
               </div>
               <p className='text-[18px]'>{item.plus}</p>
