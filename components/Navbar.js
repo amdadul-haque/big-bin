@@ -41,11 +41,11 @@ const Navbar = () => {
               <a href="/" className={`text-white font-bold pb-2 border-b-[5px] ${!isContactPage ? 'border-brand-1' : 'border-transparent'}`}>Home</a>
               <a href="/contact" className={`text-white  font-bold pb-2 border-b-[5px] ${isContactPage ? 'border-brand-1' : 'border-transparent'}`}>Contact</a>
             </div>
-            <button className=' pt-1'
+            {/* <button className=' pt-1'
               onClick={handleSerchClick}
             >
               <img src="./icons/magnifying-glass-solid.svg" alt="search" className='h-4 w-4 sm:h-5 sm:w-5' />
-            </button>
+            </button> */}
           </div>
         </div>
       </nav>
