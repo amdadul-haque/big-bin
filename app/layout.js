@@ -3,6 +3,7 @@ import "./globals.css";
 import { Footer, Navbar } from "@/components";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { GoogleTagManager } from '@next/third-parties/google'
 
 
 const roboto = Roboto({ subsets: ["latin"], weight: ['100', '300', '400', '500', '700', '900'] });
@@ -17,6 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-MR2F9HCM" />
       <body className={`${roboto.className}`}>
         <Navbar />
         <ToastContainer position="top-right" />
