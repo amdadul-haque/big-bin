@@ -19,13 +19,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       {/* <GoogleTagManager gtmId="GTM-MR2F9HCM" /> */}
-      <GoogleAnalytics gaId="G-2XVB2BDZ81" />
       <body className={`${roboto.className}`}>
         <Navbar />
         <ToastContainer position="top-right" />
         {children}
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-2XVB2BDZ81" />
     </html>
   );
 }
